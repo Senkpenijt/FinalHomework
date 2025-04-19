@@ -24,7 +24,7 @@
     background: #0e75ca;
     color: aliceblue;
     text-decoration:none;
-    font-size: 13px;;
+    font-size: 13%;;
     padding: 20px;
     /* width: auto; */
 }
@@ -42,6 +42,11 @@
     height: 70vh;
     width: 100%;
     margin-bottom: -11%;
+    @media screen and (max-width: 768px) and (max-width: 1179px){ 
+        height: 75vh;
+        margin-bottom: -59%;
+        
+    }
 
 }
 
@@ -55,20 +60,31 @@
 
 h1{
     position: absolute;
-    top: 25%;
     left: 50%;
+    top: 20%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 350%;
+    font-size: 8vh;
     text-align: center;
+    @media screen and (max-width: 768px) and (max-width: 1179px){ 
+        font-size: 6vh;
+        left: 50%;
+        top: 10%;        
+    }
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    /* width: 100%; */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     min-height: 50px;
+    @media screen and (max-width: 768px) and (max-width: 1179px){ 
+        grid-template-columns: 1fr;
+        
+    }
 
 
 }
