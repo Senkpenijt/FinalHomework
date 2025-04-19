@@ -50,7 +50,9 @@
     height: 37%;
     object-fit: cover;
     filter: brightness(50%);
+    /* margin-bottom: -10px; */
 }
+
 
 h1{
     position: absolute;
